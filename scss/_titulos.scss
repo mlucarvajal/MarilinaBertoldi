@@ -1,0 +1,20 @@
+@mixin titulos ($size, $color) {
+    font-size: $size;
+    color: $color;
+    font-weight: bold;
+    font-family: $font-family-p;
+}
+/*MAPS EACH*/
+@each $k, $v in $font-style {
+    .fontRoboto-#{$k}{
+        font-weight: $v;
+    }
+
+    
+}
+@for $col from 1 to 13 {
+    .col-#{$col}{
+        width: ($ancho/12)*$col;
+    }
+    
+}

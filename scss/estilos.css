@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap");
+/*MAPS EACH*/
+.fontRoboto-thin {
+  font-weight: 100;
+}
+
+.fontRoboto-medium {
+  font-weight: 500;
+}
+
+.fontRoboto-black {
+  font-weight: 900;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-bottom: 2px white solid;
+}
+
+.seccionesTitulo {
+  font-family: "Special Elite", cursive;
+  font-size: 30px;
+  border-bottom: 2px black solid;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.bio p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.fuente {
+  font-size: 12px;
+}
+
+table {
+  border: 2px black solid;
+  border-collapse: collapse;
+  font-family: "Roboto", sans-serif;
+}
+
+tr, td, th {
+  border: 1px black solid;
+  border-collapse: collapse;
+}
+
+.subtituloSecciones {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.tituloDiscos {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.premiosResultados {
+  background-color: green;
+  font-weight: bold;
+}
+
+.discoCanciones {
+  font-size: 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-left: 75px;
+  margin-top: 15px;
+}
+
+.discografia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 60px;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+.discografia div {
+  margin-top: 100px;
+}
+
+.discografia a {
+  margin-left: 60px;
+  margin-bottom: 50px;
+}
+
+.discografia img {
+  width: 400px;
+  height: 350px;
+  margin-left: 60px;
+  -webkit-box-shadow: 0.3rem 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.3rem 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+@media all and (min-width: 780px) {
+  .discografia div {
+    margin-top: 50px;
+  }
+}
+
+.carousel-inner img {
+  width: 300px !important;
+  height: 300px !important;
+  margin-top: 50%;
+  margin-left: 25px;
+}
+
+@media all and (min-width: 780px) {
+  .carousel-inner img {
+    width: 700px !important;
+    height: 550px !important;
+    margin-top: 50px;
+    margin-left: 20%;
+  }
+}
+
+.carouselPie {
+  margin-top: 0% !important;
+  margin-left: 0% !important;
+}
+
+.modelos {
+  color: black !important;
+}
+
+ul {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.bodyIndex {
+  background-image: url(../Imagenes/discoMobile.png);
+  background-position: top;
+  background-size: 20cm;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+@media all and (min-width: 768px) {
+  .bodyIndex {
+    background-image: url(../Imagenes/disco.png);
+    background-size: 60%;
+  }
+}
+
+/*@keyframes girar {
+    0% {
+      transform:rotate(0deg);
+    }
+    100% {
+      transform:rotate(360deg);
+    }
+  }*/
+.bg-light {
+  background-color: #50287e !important;
+}
+
+.navbar-light .navbar-brand {
+  color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.bodyDiscos {
+  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+}
+
+.bodyPremios {
+  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+}
+
+.bodyDisco {
+  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+}
+
+.bodyContacto {
+  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+}
+
+.bodyBio {
+  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+}
+
+.bodyTour {
+  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+}
+
+footer {
+  background-color: #50287e;
+  height: 100px;
+  padding: 50px 0 0 0;
+}
+
+footer img {
+  width: 15px;
+  height: 15px;
+}
+
+footer a {
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-left: 50%;
+}
+
+.bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.bio div {
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 25%;
+}
+
+.bioImagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo titulo titulo" "grammy grammy marilina" "gardel gardel marilina";
+  -ms-grid-columns: 3fr 3fr 6fr;
+      grid-template-columns: 3fr 3fr 6fr;
+  -ms-grid-rows: 4fr 4fr 4fr;
+      grid-template-rows: 4fr 4fr 4fr;
+  justify-items: center;
+}
+
+.titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: titulo;
+}
+
+.marilinaGardel {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: marilina;
+}
+
+.grammy {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: grammy;
+}
+
+.gardel {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: gardel;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 780px) {
+  #grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "grammy" "gardel" "marilina";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    justify-items: center;
+    width: 100%;
+    margin-top: 200px;
+  }
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: auto;
+}
+
+.formulario div {
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.tour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tour div h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: indigo;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@-webkit-keyframes titulos {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes titulos {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.seccionesTitulo {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: titulos;
+          animation-name: titulos;
+}
+
+.marilinaGardel img {
+  width: 400px;
+  height: 550px;
+}
+
+.prueba {
+  width: initial;
+  height: 100px;
+  background-color: black;
+}
+/*# sourceMappingURL=estilos.css.map */

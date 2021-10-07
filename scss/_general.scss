@@ -1,0 +1,350 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+header{
+  border-bottom: 2px white solid;
+}
+
+.seccionesTitulo{
+  font-family: $font-family-titulos;
+  font-size: 30px;
+  border-bottom: 2px black solid ;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.bio p{
+  font-size: 18px;
+  font-family: $font-family-p;
+  
+}
+.fuente{
+  font-size: 12px;
+}
+
+table {
+  border: 2px black solid;
+  border-collapse: collapse;
+  font-family: $font-family-p;  
+}
+
+tr, td, th{
+  border: 1px black solid;
+  border-collapse: collapse;
+}
+
+.subtituloSecciones{
+  @include titulos (20px, black)
+}
+.tituloDiscos{
+    @include titulos(20px, white);
+}
+
+.premiosResultados{
+  background-color: green;
+  font-weight: bold;
+}
+
+.discoCanciones{
+  font-size: 15px;
+  color: white;
+  font-family: $font-family-p;
+  margin-left: 75px;
+  margin-top: 15px;  
+}
+
+.discografia{
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row ;
+  margin-left: 60px;
+  align-items: space-between;
+}
+
+.discografia div{
+  
+  margin-top: 100px;
+}
+
+.discografia a{
+
+  margin-left: 60px;
+  margin-bottom: 50px;
+}
+
+.discografia img{
+  width: 400px;
+  height: 350px;
+  margin-left: 60px; 
+  box-shadow: 0.3rem 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+  margin-top: 15px; 
+}
+@media all and (min-width:780px){
+  .discografia div{
+
+    margin-top: 50px;
+
+  }
+ 
+}
+
+
+
+.carousel-inner img {
+  width: 300px !important;
+  height: 300px !important;
+  margin-top: 50%;
+  margin-left: 25px;
+}
+
+@media all and (min-width:780px){
+  .carousel-inner img{
+
+    width: 700px !important;
+    height: 550px !important;
+    margin-top: 50px;
+    margin-left: 20%;
+
+  }
+}
+
+
+.carouselPie{
+  margin-top: 0% !important;
+  margin-left: 0% !important;
+}
+
+.modelos{
+  color: black !important;
+}
+
+
+
+ul{
+  list-style: none;
+  font-family: $font-family-p;
+}
+
+
+
+.bodyIndex{
+
+    @include body (bodyIndex);
+}
+@media all and (min-width: 768px){
+  .bodyIndex{
+
+    background-image: url(../Imagenes/disco.png);
+    background-size: 60%;
+
+  }
+ 
+}
+
+/*@keyframes girar {
+    0% {
+      transform:rotate(0deg);
+    }
+    100% {
+      transform:rotate(360deg);
+    }
+  }*/
+
+.bg-light {
+    background-color: $color-principal !important;
+}
+
+.navbar-light .navbar-brand {
+  
+  color: $navBar-font-color !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    
+    color: white !important;
+}
+
+.bodyDiscos{
+   @include body (discos);
+}
+
+.bodyPremios {
+    @include body (premios);
+}
+
+.bodyDisco{
+    @include body (discografia);
+}
+
+.bodyContacto{
+    @include body (contacto);
+}
+
+.bodyBio{
+    @include body (bio);
+}
+
+.bodyTour{
+    @include body (tour);
+}
+
+
+footer {
+    background-color: $color-principal;
+    height: 100px;
+    padding: 50px 0 0 0;
+    
+  
+}
+
+footer img{
+  width: 15px;
+  height: 15px;
+}
+
+footer a{
+  
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-left: 50%;
+}
+
+
+
+.bio{
+  display: flex;
+  flex-direction:column;
+  align-content: center;  
+}
+
+.bio div{
+  width:  $ancho/2;
+  margin-top: 50px;
+  margin-left:  $ancho/4;
+}
+
+.bioImagenes{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+
+#grid{
+  display: grid;
+  grid-template-areas: 
+    
+    "titulo titulo titulo"
+    "grammy grammy marilina"
+    "gardel gardel marilina";
+
+  grid-template-columns: 3fr 3fr 6fr;
+  grid-template-rows: 4fr 4fr 4fr;
+  justify-items: center;
+}
+
+.titulo{
+  grid-area: titulo;
+}
+
+.marilinaGardel{
+  grid-area: marilina;  
+}
+
+.grammy{
+  grid-area: grammy;
+}
+
+.gardel{
+  grid-area: gardel;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 780px){
+  #grid{
+    display: grid;
+    grid-template-areas: 
+      "titulo"
+      "grammy"
+      "gardel"
+      "marilina";
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    width: $ancho;
+    margin-top: 200px;
+
+    }
+ }
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: auto; 
+  }
+
+  .formulario div{
+    margin-top: 30px;
+    font-family: $font-family-p;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .tour{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour div h2{
+    font-family: $font-family-p;
+    font-size: 20px;
+    font-weight: bold;
+    color: indigo;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;  
+}
+
+@keyframes titulos{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.seccionesTitulo{
+  animation-duration: 5s;
+  animation-name: titulos;
+}
+
+.marilinaGardel img{
+  width: 400px;
+  height: 550px;
+}
+
+.prueba{
+  width: initial;
+  height: 100px;
+  background-color: black;
+}
+
+
+
+
+

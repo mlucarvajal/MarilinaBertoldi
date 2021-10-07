@@ -1,0 +1,15 @@
+APLICAR SEO A LA PAGINA WEB ENTREGABLE Y COMPLEMENTARIO.
+
+Las modificaciones que le realice al proyecto para aplicar SEO fueron:
+
+-Agregue keywords en cada HTML
+-Agregue descripcion
+-Modifique los titulos de los HTML para que fueran representativos.
+-Resumi y modifique los parrafos de la seccion Biografia para que sean mas amenos de leer para el usuario 
+-Cambie las fotos de la seccion por un iframe video de youtube.
+-Al modificar los parrafos de la seccion Biografia saque varias etiquetas H3 que no correspondian.
+-Quite etiqueta H2 de la seccion contacto
+-Agregue un media query en el background del bodyIndex para que se ajuste el tamaño de la imagen cuando es desktop y cuando es mobile.
+-Agregue media query en la seccion discos
+-En cuanto a la navegacion entre paginas eso ya lo venia trabajando.
+-Agregue media query en la seccion discografia para que se ajuste el carousel

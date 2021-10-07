@@ -1,0 +1,14 @@
+@mixin body ($nombre) {
+    @if $nombre== bodyIndex{
+
+        background-image: url(../Imagenes/discoMobile.png);
+        background-position:top;
+        background-size: 20cm;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+   
+    @else{
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(108,108,111,1) 48%, rgba(131,128,145,1) 100%);
+    }
+}

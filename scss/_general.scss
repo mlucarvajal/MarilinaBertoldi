@@ -194,12 +194,12 @@ ul{
 .bodyTour{
     @include body (tour);
 }
+footer{
+  @include footer(todos);
+}
 
-
-footer {
-    background-color: $color-principal;
-    height: 100px;
-    padding: 50px 0 0 0;
+.footerIndex {
+    @include footer(footerIndex);
     
   
 }

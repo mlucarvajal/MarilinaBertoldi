@@ -259,8 +259,15 @@ ul {
 
 footer {
   background-color: #50287e;
-  height: 100px;
-  padding: 50px 0 0 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.footerIndex {
+  background-color: #50287e;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 footer img {

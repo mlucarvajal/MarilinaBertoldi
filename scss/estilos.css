@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap");
+/*@mixin footer ($nombre) {
+    @if $nombre== footerIndex{
+        background-color: $color-principal;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    @else{
+        background-color: $color-principal;
+        width: 100%;
+        bottom: 0;
+    }
+    
+}*/
 /*MAPS EACH*/
 .fontRoboto-thin {
   font-weight: 100;
@@ -66,23 +80,21 @@
   padding: 0;
 }
 
-header {
-  border-bottom: 2px white solid;
-}
-
 .seccionesTitulo {
   font-family: "Special Elite", cursive;
   font-size: 30px;
-  border-bottom: 2px black solid;
+  border-bottom: 2px rgba(248, 245, 245, 0.651) solid;
   margin-top: 50px;
   margin-bottom: 50px;
   letter-spacing: 3px;
   text-align: center;
+  color: white;
 }
 
 .bio p {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
+  color: #6c757d;
 }
 
 .fuente {
@@ -221,8 +233,14 @@ ul {
       transform:rotate(360deg);
     }
   }*/
+.navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .bg-light {
-  background-color: #50287e !important;
+  background-color: rgba(17, 17, 17, 0.7) !important;
 }
 
 .navbar-light .navbar-brand {
@@ -234,37 +252,40 @@ ul {
 }
 
 .bodyDiscos {
-  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+  background: black;
 }
 
 .bodyPremios {
-  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+  background: black;
 }
 
 .bodyDisco {
-  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+  background: black;
 }
 
 .bodyContacto {
-  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+  background: black;
 }
 
 .bodyBio {
-  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+  background: black;
 }
 
 .bodyTour {
-  background: radial-gradient(circle, white 0%, #6c6c6f 48%, #838091 100%);
+  background: black;
 }
 
-footer {
-  background-color: #50287e;
-  width: 100%;
-  bottom: 0;
+/*.footerSecciones{
+  @include footer(secciones);
 }
 
 .footerIndex {
-  background-color: #50287e;
+    @include footer(footerIndex);
+    
+  
+}*/
+footer {
+  background-color: rgba(17, 17, 17, 0.7);
   position: absolute;
   width: 100%;
   bottom: 0;

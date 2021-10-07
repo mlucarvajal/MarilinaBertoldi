@@ -9,10 +9,10 @@
     }
    
     @else{
-        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(108,108,111,1) 48%, rgba(131,128,145,1) 100%);
+        background: black
     }
 }
-@mixin footer ($nombre) {
+/*@mixin footer ($nombre) {
     @if $nombre== footerIndex{
         background-color: $color-principal;
         position: absolute;
@@ -25,4 +25,4 @@
         bottom: 0;
     }
     
-}
+}*/

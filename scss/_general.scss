@@ -3,24 +3,21 @@
   padding: 0;
 }
 
-
-header{
-  border-bottom: 2px white solid;
-}
-
 .seccionesTitulo{
   font-family: $font-family-titulos;
   font-size: 30px;
-  border-bottom: 2px black solid ;
+  border-bottom: 2px rgba(248, 245, 245, 0.651) solid ;
   margin-top: 50px;
   margin-bottom: 50px;
   letter-spacing: 3px;
   text-align: center;
+  color: white;
 }
 
 .bio p{
   font-size: 18px;
   font-family: $font-family-p;
+  color: $parrafoColor;
   
 }
 .fuente{
@@ -156,6 +153,10 @@ ul{
       transform:rotate(360deg);
     }
   }*/
+.navbar-nav{
+  align-items: center;
+
+}
 
 .bg-light {
     background-color: $color-principal !important;
@@ -194,14 +195,20 @@ ul{
 .bodyTour{
     @include body (tour);
 }
-footer{
-  @include footer(todos);
+/*.footerSecciones{
+  @include footer(secciones);
 }
 
 .footerIndex {
     @include footer(footerIndex);
     
   
+}*/
+footer{
+        background-color: $color-principal;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
 }
 
 footer img{

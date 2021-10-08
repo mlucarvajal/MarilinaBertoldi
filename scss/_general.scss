@@ -140,6 +140,7 @@ ul{
 
     background-image: url(../Imagenes/disco.png);
     background-size: 60%;
+    text-align: center;
 
   }
  
@@ -195,20 +196,17 @@ ul{
 .bodyTour{
     @include body (tour);
 }
-/*.footerSecciones{
-  @include footer(secciones);
+.footerSecciones{
+  @include footer (footerSecciones);
 }
 
 .footerIndex {
-    @include footer(footerIndex);
+    @include footer (footerIndex);
     
   
-}*/
-footer{
-        background-color: $color-principal;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
+}
+.intro{
+  text-align: center;
 }
 
 footer img{

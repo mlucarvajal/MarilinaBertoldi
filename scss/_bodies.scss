@@ -6,13 +6,14 @@
         background-size: 20cm;
         background-repeat: no-repeat;
         background-color: black;
+        text-align: center;
     }
    
     @else{
         background: black
     }
 }
-/*@mixin footer ($nombre) {
+@mixin footer ($nombre) {
     @if $nombre== footerIndex{
         background-color: $color-principal;
         position: absolute;
@@ -25,4 +26,4 @@
         bottom: 0;
     }
     
-}*/
+}

@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap");
-/*@mixin footer ($nombre) {
-    @if $nombre== footerIndex{
-        background-color: $color-principal;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
-    @else{
-        background-color: $color-principal;
-        width: 100%;
-        bottom: 0;
-    }
-    
-}*/
 /*MAPS EACH*/
 .fontRoboto-thin {
   font-weight: 100;
@@ -216,12 +202,14 @@ ul {
   background-size: 20cm;
   background-repeat: no-repeat;
   background-color: black;
+  text-align: center;
 }
 
 @media all and (min-width: 768px) {
   .bodyIndex {
     background-image: url(../Imagenes/disco.png);
     background-size: 60%;
+    text-align: center;
   }
 }
 
@@ -275,20 +263,21 @@ ul {
   background: black;
 }
 
-/*.footerSecciones{
-  @include footer(secciones);
+.footerSecciones {
+  background-color: rgba(17, 17, 17, 0.7);
+  width: 100%;
+  bottom: 0;
 }
 
 .footerIndex {
-    @include footer(footerIndex);
-    
-  
-}*/
-footer {
   background-color: rgba(17, 17, 17, 0.7);
   position: absolute;
   width: 100%;
   bottom: 0;
+}
+
+.intro {
+  text-align: center;
 }
 
 footer img {

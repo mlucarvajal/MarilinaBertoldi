@@ -71,7 +71,7 @@
   font-size: 30px;
   border-bottom: 2px rgba(248, 245, 245, 0.651) solid;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   letter-spacing: 3px;
   text-align: center;
   color: white;
@@ -87,20 +87,19 @@
   font-size: 12px;
 }
 
-table {
-  border: 2px black solid;
+/*table {
+  border: 2px white solid;
   border-collapse: collapse;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family-p;  
 }
 
-tr, td, th {
-  border: 1px black solid;
+tr, td, th{
+  border: 1px white solid;
   border-collapse: collapse;
-}
-
+}*/
 .subtituloSecciones {
   font-size: 20px;
-  color: black;
+  color: white;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
@@ -213,14 +212,6 @@ ul {
   }
 }
 
-/*@keyframes girar {
-    0% {
-      transform:rotate(0deg);
-    }
-    100% {
-      transform:rotate(360deg);
-    }
-  }*/
 .navbar-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -276,20 +267,34 @@ ul {
   bottom: 0;
 }
 
+.footerSecciones div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footerIndex div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .intro {
   text-align: center;
-}
-
-footer img {
-  width: 15px;
-  height: 15px;
-}
-
-footer a {
-  font-size: 12px;
-  color: white;
-  text-align: center;
-  margin-left: 50%;
 }
 
 .bio {
@@ -308,73 +313,51 @@ footer a {
   width: 50%;
   margin-top: 50px;
   margin-left: 25%;
-}
-
-.bioImagenes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  margin-bottom: 50px;
 }
 
 #grid {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "titulo titulo titulo" "grammy grammy marilina" "gardel gardel marilina";
-  -ms-grid-columns: 3fr 3fr 6fr;
-      grid-template-columns: 3fr 3fr 6fr;
-  -ms-grid-rows: 4fr 4fr 4fr;
-      grid-template-rows: 4fr 4fr 4fr;
-  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.titulo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+/*.titulo{
   grid-area: titulo;
 }
 
-.marilinaGardel {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: marilina;
-}
 
-.grammy {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+
+.grammy{
   grid-area: grammy;
 }
 
-.gardel {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+.gardel{
   grid-area: gardel;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 780px) {
-  #grid {
-    display: -ms-grid;
+}*/
+/*@media only screen and (min-width: 320px) and (max-width: 780px){
+  #grid{
     display: grid;
-        grid-template-areas: "titulo" "grammy" "gardel" "marilina";
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    grid-template-areas: 
+      "titulo"
+      "grammy"
+      "gardel"
+      "marilina";
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     justify-items: center;
-    width: 100%;
+    width: $ancho;
     margin-top: 200px;
-  }
+
+    }
+ }*/
+.marilinaGardel {
+  margin-left: 30%;
 }
 
 .formulario {
@@ -396,7 +379,16 @@ footer a {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: bold;
-  color: black;
+  color: white;
+  margin-bottom: 50px;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tour {
@@ -416,7 +408,7 @@ footer a {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: bold;
-  color: indigo;
+  color: white;
 }
 
 .home {
@@ -460,6 +452,7 @@ footer a {
 .marilinaGardel img {
   width: 400px;
   height: 550px;
+  margin-bottom: 50px;
 }
 
 .prueba {

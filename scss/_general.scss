@@ -2,8 +2,141 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: black;
+}
+.bg-img{
+  background-image:url(../Imagenes/disco3.jpg);
+  width: 100%;
+  height:400px;
+  background-position:top ;
+  background-repeat: no-repeat;
+ 
+}
+.navbar-nav{
+  align-items: center;
 
-.seccionesTitulo{
+}
+
+.bg-light {
+    background-color: $color-principal !important;
+}
+
+.navbar-light .navbar-brand {
+  
+  color: $navBar-font-color !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    
+    color: white !important;
+}
+.text-muted {
+  color: white!important;
+}
+.footerPosition1{
+  @include footerPosition(absolute)
+}
+.footerPosition2{
+  @include footerPosition(inherit)
+}
+.footerPosition2 div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.footerPosition1 div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.bio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.bio div{
+  width: 50%;
+}
+.bio p{
+  font-size: 18px;
+  font-family: $font-family-p;
+  color: $parrafoColor;
+  
+  
+}
+.youtube{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.youtube p{
+  font-size: 30px;
+  font-family: $font-family-p;
+  color: white;
+  text-transform:uppercase;
+}
+.parpadea {
+  
+  animation-name: parpadea;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+@keyframes parpadea{
+  0% { 
+    opacity: 1.0; 
+  }
+   50% { 
+     opacity: 0.0;
+  }
+  100% { 
+    opacity: 1.0; 
+  }
+}
+.titulos{
+  font-family: $font-family-titulos;
+  font-size: 30px;
+  border-bottom: 2px rgba(248, 245, 245, 0.651) solid ;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+  animation-duration: 5s;
+  animation-name: titulos;
+}
+@keyframes titulos{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.subtitulos{
+
+  @include titulos(20px, white)
+}
+.premios{
+  font-size: 18px;
+  font-family: $font-family-p;
+  color: $parrafoColor;
+}
+.galeria{
+  margin-bottom: 30px;
+ 
+}
+.carousel-size{
+  width: 600px;
+  height: 600px;
+  margin-left: 250px;
+}
+
+/*.seccionesTitulo{
   font-family: $font-family-titulos;
   font-size: 30px;
   border-bottom: 2px rgba(248, 245, 245, 0.651) solid ;
@@ -33,7 +166,7 @@
 tr, td, th{
   border: 1px white solid;
   border-collapse: collapse;
-}*/
+}
 
 .subtituloSecciones{
   @include titulos (20px, white)
@@ -263,7 +396,7 @@ ul{
     margin-top: 200px;
 
     }
- }*/
+ }
  .marilinaGardel{
   margin-left: 30%;  
 }
@@ -334,7 +467,7 @@ label{
   height: 100px;
   background-color: black;
 }
-
+*/
 
 
 

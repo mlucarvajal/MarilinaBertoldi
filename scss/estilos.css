@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
 /*MAPS EACH*/
 .fontRoboto-thin {
   font-weight: 100;
@@ -66,150 +67,16 @@
   padding: 0;
 }
 
-.seccionesTitulo {
-  font-family: "Special Elite", cursive;
-  font-size: 30px;
-  border-bottom: 2px rgba(248, 245, 245, 0.651) solid;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  letter-spacing: 3px;
-  text-align: center;
-  color: white;
-}
-
-.bio p {
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  color: #6c757d;
-}
-
-.fuente {
-  font-size: 12px;
-}
-
-/*table {
-  border: 2px white solid;
-  border-collapse: collapse;
-  font-family: $font-family-p;  
-}
-
-tr, td, th{
-  border: 1px white solid;
-  border-collapse: collapse;
-}*/
-.subtituloSecciones {
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-}
-
-.tituloDiscos {
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-}
-
-.premiosResultados {
-  background-color: green;
-  font-weight: bold;
-}
-
-.discoCanciones {
-  font-size: 15px;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  margin-left: 75px;
-  margin-top: 15px;
-}
-
-.discografia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-left: 60px;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
-}
-
-.discografia div {
-  margin-top: 100px;
-}
-
-.discografia a {
-  margin-left: 60px;
-  margin-bottom: 50px;
-}
-
-.discografia img {
-  width: 400px;
-  height: 350px;
-  margin-left: 60px;
-  -webkit-box-shadow: 0.3rem 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0.3rem 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-  margin-top: 15px;
-}
-
-@media all and (min-width: 780px) {
-  .discografia div {
-    margin-top: 50px;
-  }
-}
-
-.carousel-inner img {
-  width: 300px !important;
-  height: 300px !important;
-  margin-top: 50%;
-  margin-left: 25px;
-}
-
-@media all and (min-width: 780px) {
-  .carousel-inner img {
-    width: 700px !important;
-    height: 550px !important;
-    margin-top: 50px;
-    margin-left: 20%;
-  }
-}
-
-.carouselPie {
-  margin-top: 0% !important;
-  margin-left: 0% !important;
-}
-
-.modelos {
-  color: black !important;
-}
-
-ul {
-  list-style: none;
-  font-family: "Roboto", sans-serif;
-}
-
-.bodyIndex {
-  background-image: url(../Imagenes/discoMobile.png);
-  background-position: top;
-  background-size: 20cm;
-  background-repeat: no-repeat;
+body {
   background-color: black;
-  text-align: center;
 }
 
-@media all and (min-width: 768px) {
-  .bodyIndex {
-    background-image: url(../Imagenes/disco.png);
-    background-size: 60%;
-    text-align: center;
-  }
+.bg-img {
+  background-image: url(../Imagenes/disco3.jpg);
+  width: 100%;
+  height: 400px;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .navbar-nav {
@@ -230,44 +97,25 @@ ul {
   color: white !important;
 }
 
-.bodyDiscos {
-  background: black;
+.text-muted {
+  color: white !important;
 }
 
-.bodyPremios {
-  background: black;
-}
-
-.bodyDisco {
-  background: black;
-}
-
-.bodyContacto {
-  background: black;
-}
-
-.bodyBio {
-  background: black;
-}
-
-.bodyTour {
-  background: black;
-}
-
-.footerSecciones {
+.footerPosition1 {
   background-color: rgba(17, 17, 17, 0.7);
   width: 100%;
   bottom: 0;
-}
-
-.footerIndex {
-  background-color: rgba(17, 17, 17, 0.7);
   position: absolute;
+}
+
+.footerPosition2 {
+  background-color: rgba(17, 17, 17, 0.7);
   width: 100%;
   bottom: 0;
+  position: inherit;
 }
 
-.footerSecciones div {
+.footerPosition2 div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,7 +128,7 @@ ul {
           justify-content: flex-start;
 }
 
-.footerIndex div {
+.footerPosition1 div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,10 +139,6 @@ ul {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-}
-
-.intro {
-  text-align: center;
 }
 
 .bio {
@@ -305,18 +149,22 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bio div {
   width: 50%;
-  margin-top: 50px;
-  margin-left: 25%;
-  margin-bottom: 50px;
 }
 
-#grid {
+.bio p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #6c757d;
+}
+
+.youtube {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,6 +172,338 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.youtube p {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+.parpadea {
+  -webkit-animation-name: parpadea;
+          animation-name: parpadea;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes parpadea {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes parpadea {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+.titulos {
+  font-family: "Syncopate", sans-serif;
+  font-size: 30px;
+  border-bottom: 2px rgba(248, 245, 245, 0.651) solid;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: titulos;
+          animation-name: titulos;
+}
+
+@-webkit-keyframes titulos {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes titulos {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.subtitulos {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.premios {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #6c757d;
+}
+
+.galeria {
+  margin-bottom: 30px;
+}
+
+.carousel-size {
+  width: 600px;
+  height: 600px;
+  margin-left: 250px;
+}
+
+/*.seccionesTitulo{
+  font-family: $font-family-titulos;
+  font-size: 30px;
+  border-bottom: 2px rgba(248, 245, 245, 0.651) solid ;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+}
+
+.bio p{
+  font-size: 18px;
+  font-family: $font-family-p;
+  color: $parrafoColor;
+  
+}
+.fuente{
+  font-size: 12px;
+}
+
+/*table {
+  border: 2px white solid;
+  border-collapse: collapse;
+  font-family: $font-family-p;  
+}
+
+tr, td, th{
+  border: 1px white solid;
+  border-collapse: collapse;
+}
+
+.subtituloSecciones{
+  @include titulos (20px, white)
+}
+.tituloDiscos{
+    @include titulos(20px, white);
+}
+
+.premiosResultados{
+  background-color: green;
+  font-weight: bold;
+}
+
+.discoCanciones{
+  font-size: 15px;
+  color: white;
+  font-family: $font-family-p;
+  margin-left: 75px;
+  margin-top: 15px;  
+}
+
+.discografia{
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row ;
+  margin-left: 60px;
+  align-items: space-between;
+}
+
+.discografia div{
+  
+  margin-top: 100px;
+}
+
+.discografia a{
+
+  margin-left: 60px;
+  margin-bottom: 50px;
+}
+
+.discografia img{
+  width: 400px;
+  height: 350px;
+  margin-left: 60px; 
+  box-shadow: 0.3rem 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+  margin-top: 15px; 
+}
+@media all and (min-width:780px){
+  .discografia div{
+
+    margin-top: 50px;
+
+  }
+ 
+}
+
+
+
+.carousel-inner img {
+  width: 300px !important;
+  height: 300px !important;
+  margin-top: 50%;
+  margin-left: 25px;
+}
+
+@media all and (min-width:780px){
+  .carousel-inner img{
+
+    width: 700px !important;
+    height: 550px !important;
+    margin-top: 50px;
+    margin-left: 20%;
+
+  }
+}
+
+
+.carouselPie{
+  margin-top: 0% !important;
+  margin-left: 0% !important;
+}
+
+.modelos{
+  color: black !important;
+}
+
+
+
+ul{
+  list-style: none;
+  font-family: $font-family-p;
+}
+
+
+
+.bodyIndex{
+
+    @include body (bodyIndex);
+}
+@media all and (min-width: 768px){
+  .bodyIndex{
+
+    background-image: url(../Imagenes/disco.png);
+    background-size: 60%;
+    text-align: center;
+
+  }
+ 
+}
+
+.navbar-nav{
+  align-items: center;
+
+}
+
+.bg-light {
+    background-color: $color-principal !important;
+}
+
+.navbar-light .navbar-brand {
+  
+  color: $navBar-font-color !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    
+    color: white !important;
+}
+
+.bodyDiscos{
+   @include body (discos);
+}
+
+.bodyPremios {
+    @include body (premios);
+}
+
+.bodyDisco{
+    @include body (discografia);
+}
+
+.bodyContacto{
+    @include body (contacto);
+}
+
+.bodyBio{
+    @include body (bio);
+}
+
+.bodyTour{
+    @include body (tour);
+}
+.footerSecciones{
+  @include footer (footerSecciones);
+}
+
+.footerIndex {
+    @include footer (footerIndex);
+    
+  
+}
+.footerSecciones div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.footerIndex div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.intro{
+  text-align: center;
+}
+
+.bio{
+  display: flex;
+  flex-direction:column;
+  align-content: center;  
+}
+
+.bio div{
+  width:  $ancho/2;
+  margin-top: 50px;
+  margin-left:  $ancho/4;
+  margin-bottom: 50px;
+}
+
+
+
+#grid{
+  display: flex;
+  flex-direction: column;
+ 
 }
 
 /*.titulo{
@@ -355,109 +535,76 @@ ul {
     margin-top: 200px;
 
     }
- }*/
-.marilinaGardel {
-  margin-left: 30%;
+ }
+ .marilinaGardel{
+  margin-left: 30%;  
 }
 
-.formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-size: auto;
-}
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: auto; 
+ 
+  }
 
-.formulario div {
-  margin-top: 30px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 50px;
-}
-
-label {
-  font-family: "Roboto", sans-serif;
+  .formulario div{
+    margin-top: 30px;
+    font-family: $font-family-p;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 50px;
+    
+  }
+label{
+  font-family: $font-family-p;
   font-size: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items:center ;
 }
-
-.tour {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  .tour{
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.tour div h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
+.tour div h2{
+    font-family: $font-family-p;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
-.home {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.home{
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items:flex-end;  
 }
 
-@-webkit-keyframes titulos {
-  0% {
+@keyframes titulos{
+  0%{
     opacity: 0;
   }
-  100% {
+  100%{
     opacity: 1;
   }
 }
 
-@keyframes titulos {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.seccionesTitulo{
+  animation-duration: 5s;
+  animation-name: titulos;
 }
 
-.seccionesTitulo {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-name: titulos;
-          animation-name: titulos;
-}
-
-.marilinaGardel img {
+.marilinaGardel img{
   width: 400px;
   height: 550px;
   margin-bottom: 50px;
 }
 
-.prueba {
+.prueba{
   width: initial;
   height: 100px;
   background-color: black;
 }
+*/
 /*# sourceMappingURL=estilos.css.map */

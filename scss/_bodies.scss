@@ -1,31 +1,6 @@
-@mixin body ($nombre) {
-    @if $nombre== bodyIndex{
-
-        background-image: url(../Imagenes/discoMobile.png);
-        background-position:top;
-        background-size: 20cm;
-        background-repeat: no-repeat;
-        background-color: black;
-        text-align: center;
-    }
-   
-    @else{
-        background: black
-    }
-}
-@mixin footer ($nombre) {
-    @if $nombre== footerIndex{
-        background-color: $color-principal;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        
-        
-    }
-    @else{
-        background-color: $color-principal;
-        width: 100%;
-        bottom: 0;
-    }
-    
+@mixin footerPosition ($position){
+    background-color: rgba(17, 17, 17, 0.7);
+    width: 100%;
+    bottom: 0;
+    position: $position;
 }

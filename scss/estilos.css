@@ -126,6 +126,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-top: 50px;
 }
 
 .footerPosition1 div {
@@ -139,6 +140,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-top: 50px;
 }
 
 .bio {
@@ -260,8 +262,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.premios {
-  font-size: 18px;
+.textos-estilo {
+  font-size: 20pxpx;
   font-family: "Roboto", sans-serif;
   color: #6c757d;
 }
@@ -274,6 +276,102 @@ body {
   width: 600px;
   height: 600px;
   margin-left: 250px;
+}
+
+.discografia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 60px;
+}
+
+.discografia div {
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.discografia div:hover {
+  -webkit-animation-name: zoom-img;
+          animation-name: zoom-img;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.discografia img {
+  width: 400px;
+  height: 350px;
+  margin-left: 60px;
+}
+
+@-webkit-keyframes zoom-img {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes zoom-img {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.estilos-a {
+  font-size: 20px;
+  margin-left: 55px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.estilos-a:link {
+  color: white;
+}
+
+.estilos-a:visited {
+  color: coral;
+}
+
+.album-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.album-1.album-1 li {
+  margin-left: 30px;
+  color: white;
+}
+
+.fichaTecnica {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.btn-success {
+  height: 50%;
+  margin-left: 80px;
 }
 
 /*.seccionesTitulo{

@@ -44,11 +44,13 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-top: 50px;
 }
 .footerPosition1 div{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-top: 50px;
 }
 .bio{
   display: flex;
@@ -121,8 +123,8 @@ body{
 
   @include titulos(20px, white)
 }
-.premios{
-  font-size: 18px;
+.textos-estilo{
+  font-size: 20pxpx;
   font-family: $font-family-p;
   color: $parrafoColor;
 }
@@ -135,6 +137,71 @@ body{
   height: 600px;
   margin-left: 250px;
 }
+.discografia {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 60px
+
+  }
+  .discografia div{
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+   
+      &:hover{
+        animation-name: zoom-img;
+        animation-duration: 2s;
+      }
+    }
+  
+  .discografia img {
+    width: 400px;
+    height: 350px;
+    margin-left: 60px;
+
+}
+@keyframes zoom-img{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+
+.estilos-a{
+  font-size: 20px;
+  margin-left: 55px;
+  transform: scale(1);
+ 
+}
+.estilos-a:link{
+  color:white;
+}
+.estilos-a:visited{
+  color: coral;
+}
+.album-1{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-top: 30px;
+  &.album-1 li{
+    margin-left: 30px;
+    color: white
+  };
+}
+.fichaTecnica{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.btn-success{
+  height: 50%;
+  margin-left: 80px;
+}
+
 
 /*.seccionesTitulo{
   font-family: $font-family-titulos;

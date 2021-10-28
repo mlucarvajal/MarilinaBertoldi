@@ -4,6 +4,7 @@
 }
 body{
   background-color: black;
+  color: white;
 }
 .bg-img{
   background-image:url(../Imagenes/disco3.jpg);
@@ -36,11 +37,24 @@ body{
 }
 .footerPosition1{
   @include footerPosition(absolute)
+  
 }
 .footerPosition2{
   @include footerPosition(inherit)
 }
-.footerPosition2 div{
+.footer-ul{
+  display: inline;
+  align-content: space-between;
+}
+.footer-li{
+    display: inline;
+    padding-left:5px;
+    padding-right:5px
+}
+
+
+
+/*.footerPosition2 div{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -51,7 +65,7 @@ body{
   flex-direction: row;
   justify-content: flex-start;
   margin-top: 50px;
-}
+}*/
 .bio{
   display: flex;
   flex-direction: column;
@@ -172,17 +186,25 @@ body{
 
 
 .estilos-a{
-  font-size: 20px;
-  margin-left: 55px;
-  transform: scale(1);
- 
+  @include estilos-a(20px, 55px)
+}
+.estilos-aFooter{
+  @include estilos-a(15px,auto)
+  
+}
+.estilos-aFooter{
+  color: white;
+}
+.estilos-aFooter{
+  color: white;
 }
 .estilos-a:link{
-  color:white;
+  color: white;
 }
 .estilos-a:visited{
-  color: coral;
+  color: white;
 }
+
 .album-1{
   display: flex;
   flex-direction: row;
@@ -200,6 +222,14 @@ body{
 .btn-success{
   height: 50%;
   margin-left: 80px;
+}
+
+form{
+  margin-left: 300px;
+  margin-bottom: 50px;
+}
+.form-row{
+  margin-left: 8px!important;
 }
 
 

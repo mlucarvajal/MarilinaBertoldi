@@ -3,4 +3,13 @@
     width: 100%;
     bottom: 0;
     position: $position;
+    
+    
+}
+@mixin estilos-a ($size, $margin) {
+    font-size: $size;
+    margin-left: $margin;
+    transform: scale(1);
+   
+
 }

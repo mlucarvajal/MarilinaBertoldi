@@ -13,9 +13,3 @@
 
     
 }
-@for $col from 1 to 13 {
-    .col-#{$col}{
-        width: ($ancho/12)*$col;
-    }
-    
-}

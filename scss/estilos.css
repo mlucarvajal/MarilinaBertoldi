@@ -14,54 +14,6 @@
   font-weight: 900;
 }
 
-.col-1 {
-  width: 8.33333%;
-}
-
-.col-2 {
-  width: 16.66667%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.33333%;
-}
-
-.col-5 {
-  width: 41.66667%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.33333%;
-}
-
-.col-8 {
-  width: 66.66667%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.33333%;
-}
-
-.col-11 {
-  width: 91.66667%;
-}
-
-.col-12 {
-  width: 100%;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -80,6 +32,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/*media query background pantalla grande/media*/
 @media all and (min-width: 430px) and (max-width: 1200px) {
   .bg-img {
     background-image: url(../Imagenes/disco31.jpg);
@@ -89,6 +42,7 @@ body {
   }
 }
 
+/*mediaquery back pantalla chica/media*/
 @media all and (min-width: 375px) and (max-width: 430px) {
   .bg-img {
     background-image: url(../Imagenes/disco31.jpg);
@@ -109,14 +63,6 @@ body {
   height: 315px;
 }
 
-/* CSS pantallas de 320px o superior */
-@media (min-width: 768px) {
-  .mi-iframe {
-    width: 200px;
-    height: 150px;
-  }
-}
-
 .navbar-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -124,7 +70,7 @@ body {
 }
 
 .bg-light {
-  background-color: black !important;
+  background-color: rgba(0, 0, 0, 0.57) !important;
 }
 
 .navbar-light .navbar-brand {
@@ -157,19 +103,29 @@ footer ul {
   list-style: none;
 }
 
-/*.footerPosition2 div{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 50px;
-}
-.footerPosition1 div{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 50px;
-}*/
 .bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 70px;
+}
+
+.bio p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #6c757d;
+}
+
+.infoBio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,19 +133,52 @@ footer ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0px;
+  margin-left: 30px;
 }
 
-.bio div {
-  width: 50%;
+.bio div img {
+  width: 100%;
 }
 
-.bio p {
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  color: #6c757d;
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+to {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/*media query imagen biografia*/
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .bio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bio div img {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin-top: -100px;
+  }
 }
 
 .youtube {
@@ -295,7 +284,7 @@ footer ul {
 }
 
 .galeria {
-  margin-bottom: 30px;
+  margin-top: -3.75rem;
 }
 
 .discografia {
@@ -309,6 +298,31 @@ footer ul {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-left: 60px;
+}
+
+/*media query discografia*/
+@media all and (max-width: 992px) {
+  .discografia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30px;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .disco-img {
+    margin-left: 0px !important;
+  }
+  .discografia div a {
+    font-size: 18px;
+  }
 }
 
 .discografia div {
@@ -400,6 +414,19 @@ footer ul {
   color: white;
 }
 
+@media all and (max-width: 992px) {
+  .album-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+
 .fichaTecnica {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -411,12 +438,65 @@ footer ul {
 }
 
 form {
-  margin-left: 300px;
   margin-bottom: 50px;
 }
 
 .form-row {
   margin-left: 8px !important;
+}
+
+.noticias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 70px;
+}
+
+.infoNoticias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*pantallas grandes*/
+.carousel-item img {
+  height: 640px;
+  width: 360px;
+}
+
+/*media query pantallas medias*/
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .carousel-item img {
+    height: 340px;
+    width: 100px;
+  }
+}
+
+/*media query pantallas chicas*/
+@media all and (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+    width: 100px;
+  }
 }
 
 /*.seccionesTitulo{

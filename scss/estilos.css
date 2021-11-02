@@ -1,19 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
-/*MAPS EACH*/
-.fontRoboto-thin {
-  font-weight: 100;
-}
-
-.fontRoboto-medium {
-  font-weight: 500;
-}
-
-.fontRoboto-black {
-  font-weight: 900;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -52,15 +39,8 @@ body {
   }
 }
 
-@media all and (max-width: 575px) {
-  .row {
-    margin-top: 30px !important;
-  }
-}
-
-.mi-iframe {
-  width: 560px;
-  height: 315px;
+.intro {
+  margin-top: 50px !important;
 }
 
 .navbar-nav {
@@ -83,6 +63,11 @@ body {
 
 .text-muted {
   color: white !important;
+}
+
+.dropdown-menu {
+  color: black !important;
+  background-color: coral !important;
 }
 
 .footerPosition1 {
@@ -320,8 +305,9 @@ to {
   .disco-img {
     margin-left: 0px !important;
   }
-  .discografia div a {
-    font-size: 18px;
+  .discografia div img {
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -445,6 +431,11 @@ form {
   margin-left: 8px !important;
 }
 
+.btn {
+  margin-left: 150px !important;
+  margin-top: 30px !important;
+}
+
 .noticias {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,348 +477,135 @@ form {
 /*media query pantallas medias*/
 @media all and (min-width: 768px) and (max-width: 992px) {
   .carousel-item img {
-    height: 340px;
+    height: 400px;
     width: 100px;
   }
-}
-
-/*media query pantallas chicas*/
-@media all and (max-width: 768px) {
-  .carousel-item img {
-    height: 300px;
-    width: 100px;
-  }
-}
-
-/*.seccionesTitulo{
-  font-family: $font-family-titulos;
-  font-size: 30px;
-  border-bottom: 2px rgba(248, 245, 245, 0.651) solid ;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  letter-spacing: 3px;
-  text-align: center;
-  color: white;
-}
-
-.bio p{
-  font-size: 18px;
-  font-family: $font-family-p;
-  color: $parrafoColor;
-  
-}
-.fuente{
-  font-size: 12px;
-}
-
-/*table {
-  border: 2px white solid;
-  border-collapse: collapse;
-  font-family: $font-family-p;  
-}
-
-tr, td, th{
-  border: 1px white solid;
-  border-collapse: collapse;
-}
-
-.subtituloSecciones{
-  @include titulos (20px, white)
-}
-.tituloDiscos{
-    @include titulos(20px, white);
-}
-
-.premiosResultados{
-  background-color: green;
-  font-weight: bold;
-}
-
-.discoCanciones{
-  font-size: 15px;
-  color: white;
-  font-family: $font-family-p;
-  margin-left: 75px;
-  margin-top: 15px;  
-}
-
-.discografia{
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row ;
-  margin-left: 60px;
-  align-items: space-between;
-}
-
-.discografia div{
-  
-  margin-top: 100px;
-}
-
-.discografia a{
-
-  margin-left: 60px;
-  margin-bottom: 50px;
-}
-
-.discografia img{
-  width: 400px;
-  height: 350px;
-  margin-left: 60px; 
-  box-shadow: 0.3rem 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
-  margin-top: 15px; 
-}
-@media all and (min-width:780px){
-  .discografia div{
-
-    margin-top: 50px;
-
-  }
- 
-}
-
-
-
-.carousel-inner img {
-  width: 300px !important;
-  height: 300px !important;
-  margin-top: 50%;
-  margin-left: 25px;
-}
-
-@media all and (min-width:780px){
-  .carousel-inner img{
-
-    width: 700px !important;
-    height: 550px !important;
-    margin-top: 50px;
-    margin-left: 20%;
-
-  }
-}
-
-
-.carouselPie{
-  margin-top: 0% !important;
-  margin-left: 0% !important;
-}
-
-.modelos{
-  color: black !important;
-}
-
-
-
-ul{
-  list-style: none;
-  font-family: $font-family-p;
-}
-
-
-
-.bodyIndex{
-
-    @include body (bodyIndex);
-}
-@media all and (min-width: 768px){
-  .bodyIndex{
-
-    background-image: url(../Imagenes/disco.png);
-    background-size: 60%;
-    text-align: center;
-
-  }
- 
-}
-
-.navbar-nav{
-  align-items: center;
-
-}
-
-.bg-light {
-    background-color: $color-principal !important;
-}
-
-.navbar-light .navbar-brand {
-  
-  color: $navBar-font-color !important;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    
-    color: white !important;
-}
-
-.bodyDiscos{
-   @include body (discos);
-}
-
-.bodyPremios {
-    @include body (premios);
-}
-
-.bodyDisco{
-    @include body (discografia);
-}
-
-.bodyContacto{
-    @include body (contacto);
-}
-
-.bodyBio{
-    @include body (bio);
-}
-
-.bodyTour{
-    @include body (tour);
-}
-.footerSecciones{
-  @include footer (footerSecciones);
-}
-
-.footerIndex {
-    @include footer (footerIndex);
-    
-  
-}
-.footerSecciones div{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.footerIndex div{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.intro{
-  text-align: center;
-}
-
-.bio{
-  display: flex;
-  flex-direction:column;
-  align-content: center;  
-}
-
-.bio div{
-  width:  $ancho/2;
-  margin-top: 50px;
-  margin-left:  $ancho/4;
-  margin-bottom: 50px;
-}
-
-
-
-#grid{
-  display: flex;
-  flex-direction: column;
- 
-}
-
-/*.titulo{
-  grid-area: titulo;
-}
-
-
-
-.grammy{
-  grid-area: grammy;
-}
-
-.gardel{
-  grid-area: gardel;
-}*/
-/*@media only screen and (min-width: 320px) and (max-width: 780px){
-  #grid{
-    display: grid;
-    grid-template-areas: 
-      "titulo"
-      "grammy"
-      "gardel"
-      "marilina";
-    
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    width: $ancho;
-    margin-top: 200px;
-
-    }
- }
- .marilinaGardel{
-  margin-left: 30%;  
-}
-
-  .formulario{
+  .noticias {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-size: auto; 
- 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
+}
 
-  .formulario div{
+@media all and (max-width: 390px) {
+  .galeria-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .galeria-img.galeria-img div img {
+    width: 300px;
+    margin-left: 30px;
+    -webkit-box-shadow: coral;
+            box-shadow: coral;
+  }
+  .galeria-img.galeria-img div img:hover {
+    -webkit-animation-name: zoom-img;
+            animation-name: zoom-img;
+    -webkit-animation-duration: 300ms;
+            animation-duration: 300ms;
+  }
+}
+
+@media all and (min-width: 390px) and (max-width: 768px) {
+  .galeria-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+  }
+  .galeria-img.galeria-img div img {
+    width: 400px;
+    margin-left: 30px;
+    -webkit-box-shadow: coral;
+            box-shadow: coral;
+  }
+  .galeria-img.galeria-img div img:hover {
+    -webkit-animation-name: zoom-img;
+            animation-name: zoom-img;
+    -webkit-animation-duration: 300ms;
+            animation-duration: 300ms;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .disco-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+  }
+  .album-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .album-1 img {
+    width: 300px;
+    height: 300px;
+  }
+  .album-1 ol {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 30px;
     margin-top: 30px;
-    font-family: $font-family-p;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 50px;
-    
   }
-label{
-  font-family: $font-family-p;
-  font-size: 20px;
-  align-items:center ;
-}
-  .tour{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tour div h2{
-    font-family: $font-family-p;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-
-.home{
-  display: flex;
-  flex-direction: column;
-  align-items:flex-end;  
-}
-
-@keyframes titulos{
-  0%{
-    opacity: 0;
+  .album-1 a {
+    margin-left: 30px;
+    margin-top: 50px;
   }
-  100%{
-    opacity: 1;
+  .fichaTecnica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-.seccionesTitulo{
-  animation-duration: 5s;
-  animation-name: titulos;
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .album-1 ol {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+  .album-1 a {
+    margin-left: 30px;
+    margin-top: 50px;
+  }
 }
 
-.marilinaGardel img{
-  width: 400px;
-  height: 550px;
-  margin-bottom: 50px;
+@media all and (min-width: 992px) {
+  .fot-especial {
+    position: absolute;
+  }
 }
-
-.prueba{
-  width: initial;
-  height: 100px;
-  background-color: black;
-}
-*/
 /*# sourceMappingURL=estilos.css.map */

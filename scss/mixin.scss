@@ -14,3 +14,10 @@
    
 
 }
+@mixin titulos ($size, $color) {
+    font-size: $size;
+    color: $color;
+    font-weight: bold;
+    font-family: $font-family-p;
+   
+}

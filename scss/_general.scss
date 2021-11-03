@@ -348,14 +348,16 @@ form{
     &.galeria-img div img{
       width: 300px;
       margin-left: 30px;
-      box-shadow: coral;
+      box-shadow:0 8px 6px -6px white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+     
     }
-    &.galeria-img div img:hover{
-      animation-name: zoom-img;
-      animation-duration: 300ms;
+  
+    
     }
   }
-}
+
 @media all and (min-width: 390px) and (max-width: 768px){
   .galeria-img{
     display: flex;
@@ -364,12 +366,12 @@ form{
     &.galeria-img div img{
       width: 400px;
       margin-left: 30px;
-      box-shadow: coral;
+      box-shadow:0 8px 6px -6px white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      
     }
-    &.galeria-img div img:hover{
-      animation-name: zoom-img;
-      animation-duration: 300ms;
-    }
+    
   }
 }
 @media all and (max-width:768px){

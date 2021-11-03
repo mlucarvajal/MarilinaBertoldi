@@ -504,14 +504,10 @@ form {
   .galeria-img.galeria-img div img {
     width: 300px;
     margin-left: 30px;
-    -webkit-box-shadow: coral;
-            box-shadow: coral;
-  }
-  .galeria-img.galeria-img div img:hover {
-    -webkit-animation-name: zoom-img;
-            animation-name: zoom-img;
-    -webkit-animation-duration: 300ms;
-            animation-duration: 300ms;
+    -webkit-box-shadow: 0 8px 6px -6px white;
+            box-shadow: 0 8px 6px -6px white;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -529,14 +525,10 @@ form {
   .galeria-img.galeria-img div img {
     width: 400px;
     margin-left: 30px;
-    -webkit-box-shadow: coral;
-            box-shadow: coral;
-  }
-  .galeria-img.galeria-img div img:hover {
-    -webkit-animation-name: zoom-img;
-            animation-name: zoom-img;
-    -webkit-animation-duration: 300ms;
-            animation-duration: 300ms;
+    -webkit-box-shadow: 0 8px 6px -6px white;
+            box-shadow: 0 8px 6px -6px white;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 

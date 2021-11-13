@@ -1,171 +1,149 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   background-color: black;
   color: white;
   width: 100%;
-  height:400px;
+  height: 400px;
 }
-.bg-img{
-  background-image:url(../Imagenes/disco3.jpg);
-  background-position:top ;
+.bg-img {
+  background-image: url(../Imagenes/disco3.jpg);
+  background-position: top;
   background-repeat: no-repeat;
- 
 }
 /*media query background pantalla grande/media*/
-@media all and(min-width:430px) and (max-width: 1200px){
-  .bg-img{
+@media all and(min-width:430px) and (max-width: 1200px) {
+  .bg-img {
     background-image: url(../Imagenes/disco31.jpg);
     background-size: cover;
-    background-position:top ;
+    background-position: top;
     background-repeat: no-repeat;
   }
-
 }
 /*mediaquery back pantalla chica/media*/
-@media all and(min-width:375px) and (max-width:430px){
-  .bg-img{
+@media all and(min-width:375px) and (max-width: 430px) {
+  .bg-img {
     background-image: url(../Imagenes/disco31.jpg);
     background-size: 150%;
-    background-position:top ;
+    background-position: top;
     background-repeat: no-repeat;
-
   }
- 
 }
-.intro{
+.intro {
   margin-top: 50px !important;
 }
 
-.navbar-nav{
+.navbar-nav {
   align-items: center;
-
 }
 
 .bg-light {
-    background-color: $color-principal !important;
+  background-color: $color-principal !important;
 }
 
 .navbar-light .navbar-brand {
-  
   color: $navBar-font-color !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    
-    color: white !important;
+  color: white !important;
 }
 .text-muted {
-  color: white!important;
+  color: white !important;
 }
-.dropdown-menu{
+.dropdown-menu {
   color: black !important;
   background-color: coral !important;
+}
+footer{
+  margin-top: 50px
+}
+.footerPosition1 {
+  @include footerPosition(absolute);
+}
+.footerPosition2 {
+  @include footerPosition(inherit);
+}
 
-}
-.footerPosition1{
-  @include footerPosition(absolute)
-  
-}
-.footerPosition2{
-  @include footerPosition(inherit)
-}
-
-footer ul{
+footer ul {
   list-style: none;
-
 }
 
-.bio{
-
+.bio {
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-content: center;
   padding: 70px;
-  
+
+  p {
+    font-size: 18px;
+    font-family: $font-family-p;
+    color: $parrafoColor;
+  }
+  div img {
+    width: 100%;
+  }
 }
 
-.bio p{
-  font-size: 18px;
-  font-family: $font-family-p;
-  color: $parrafoColor;
 
-}
-.infoBio{
+.infoBio {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 0px;
   margin-left: 30px;
-  
-
 }
-
-
-.bio div img{
-  width: 100%;
-  
- 
-}
-@keyframes rotate{from{
-  transform: rotate(0deg);}}
-  to
-  {transform: rotate(90deg);}
 
 /*media query imagen biografia*/
-@media all and (min-width:768px) and (max-width:992px) {
-  .bio{
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .bio {
     display: flex;
     flex-direction: column;
-    
-  } 
-  .bio div img{
+  }
+  .bio div img {
     transform: rotate(90deg);
     margin-top: -100px;
-    
-    
   }
-  
 }
 
-.youtube{
+.youtube {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
+
+  p {
+    font-size: 30px;
+    font-family: $font-family-p;
+    color: white;
+    text-transform: uppercase;
+  }
 }
-.youtube p{
-  font-size: 30px;
-  font-family: $font-family-p;
-  color: white;
-  text-transform:uppercase;
-}
+
 .parpadea {
-  
   animation-name: parpadea;
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
 }
-@keyframes parpadea{
-  0% { 
-    opacity: 1.0; 
+@keyframes parpadea {
+  0% {
+    opacity: 1;
   }
-   50% { 
-     opacity: 0.0;
+  50% {
+    opacity: 0;
   }
-  100% { 
-    opacity: 1.0; 
+  100% {
+    opacity: 1;
   }
 }
-.titulos{
+.titulos {
   font-family: $font-family-titulos;
   font-size: 30px;
-  border-bottom: 2px rgba(248, 245, 245, 0.651) solid ;
+  border-bottom: 2px rgba(248, 245, 245, 0.651) solid;
   margin-top: 50px;
   margin-bottom: 20px;
   letter-spacing: 3px;
@@ -174,150 +152,140 @@ footer ul{
   animation-duration: 5s;
   animation-name: titulos;
 }
-@keyframes titulos{
-  0%{
+@keyframes titulos {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-.subtitulos{
-
-  @include titulos(20px, white)
+.subtitulos {
+  @include titulos(20px, white);
 }
-.textos-estilo{
+.textos-estilo {
   font-size: 20pxpx;
   font-family: $font-family-p;
   color: $parrafoColor;
 }
-.galeria{
-  
+.galeria {
   margin-top: -3.75rem;
-
- 
 }
 
 .discografia {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 60px
-
-  }
-  /*media query discografia*/
-  @media all and (max-width:992px){
-    .discografia{
-      display: flex;
-      flex-direction: column;
-      margin-left: 30px;
-      align-content: flex-start;
-    }
-  }
-  @media all and (max-width:768px){
-    .disco-img{
-      margin-left: 0px !important;
-
-    }
-    .discografia div img{
-      width: 300px;
-      height: 300px;
-    }
-    
-  }
-  .discografia div{
-    width: 50%;
-    margin-top: 30px;
-    margin-bottom: 50px;
-   
-      &:hover{
-        animation-name: zoom-img;
-        animation-duration: 3s;
-      }
-    }
-  
-  .disco-img {
-    width: 400px;
-    height: 350px;
-    margin-left: 60px;
-    border-radius: 2vh;
-
+  margin-left: 60px;
 }
-@keyframes zoom-img{
-  0%{
+/*media query discografia*/
+@media all and (max-width: 992px) {
+  .discografia {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    align-content: flex-start;
+  }
+}
+@media all and (max-width: 768px) {
+  .disco-img {
+    margin-left: 0px !important;
+  }
+  .discografia div img {
+    width: 300px;
+    height: auto;
+  }
+}
+.discografia div {
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  &:hover {
+    animation-name: zoom-img;
+    animation-duration: 3s;
+  }
+}
+
+.disco-img {
+  width: 400px;
+  height: auto;
+  margin-left: 60px;
+  border-radius: 2vh;
+}
+@keyframes zoom-img {
+  0% {
     transform: scale(1);
   }
-  100%{
+  100% {
     transform: scale(1.2);
   }
 }
 
-
-.estilos-a{
-  @include estilos-a(20px, 55px)
+.estilos-a {
+  @include estilos-a(20px, 55px);
 }
-.estilos-aFooter{
-  @include estilos-a(15px,auto)
-  
+.estilos-aFooter {
+  @include estilos-a(15px, auto);
 }
-.estilos-aFooter{
+.estilos-aFooter {
   color: white;
 }
-.estilos-aFooter{
+.estilos-aFooter {
   color: white;
 }
-.estilos-a:link{
+.estilos-a:link {
   color: white;
 }
-.estilos-a:visited{
+.estilos-a:visited {
   color: white;
 }
 
-.album-1{
+.album-1 {
   display: flex;
   flex-direction: row;
   margin-left: 50px;
   margin-top: 30px;
-  &.album-1 li{
+  &.album-1 li {
     margin-left: 30px;
-    color: white
-  };
+    color: white;
+  }
 }
-@media all and (max-width:992px){
-  .album-1{
+@media all and (max-width: 992px) {
+  .album-1 {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
   }
 }
-.fichaTecnica{
+.fichaTecnica {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.btn-success{
+.btn-success {
   height: 50%;
   margin-left: 80px;
 }
 
-form{
-
+form {
   margin-bottom: 50px;
 }
-.form-row{
-  margin-left: 8px!important;
+.form-row {
+  margin-left: 8px !important;
 }
-.btn{
+/*boton escuchame*/
+.btn {
   margin-left: 150px !important;
-  margin-top: 30px !important;
+  height: 60px !important;
 }
-.noticias{
+.noticias {
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-content: center;
   padding: 70px;
 }
-.infoNoticias{
+.infoNoticias {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -326,100 +294,93 @@ form{
   margin-right: 10px;
 }
 /*pantallas grandes*/
-.carousel-item img{
-  height: 640px;
+.carousel-item img {
+  height: auto;
   width: 360px;
 }
 /*media query pantallas medias*/
-@media all and (min-width:768px) and (max-width:992px){
-  .carousel-item img{
-    height:400px;
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .carousel-item img {
+    height: auto;
     width: 100px;
   }
-  .noticias{
+  .noticias {
     display: flex;
     flex-direction: column;
   }
 }
-@media all and (max-width: 390px){
-  .galeria-img{
+@media all and (max-width: 390px) {
+  .galeria-img {
     display: flex;
     flex-direction: column;
-    &.galeria-img div img{
+    &.galeria-img div img {
       width: 300px;
       margin-left: 30px;
-      box-shadow:0 8px 6px -6px white;
+      box-shadow: 0 8px 6px -6px white;
       margin-top: 20px;
       margin-bottom: 20px;
-     
-    }
-  
-    
     }
   }
+}
 
-@media all and (min-width: 390px) and (max-width: 768px){
-  .galeria-img{
+@media all and (min-width: 390px) and (max-width: 768px) {
+  .galeria-img {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    &.galeria-img div img{
+    &.galeria-img div img {
       width: 400px;
       margin-left: 30px;
-      box-shadow:0 8px 6px -6px white;
+      box-shadow: 0 8px 6px -6px white;
       margin-top: 20px;
       margin-bottom: 20px;
-      
     }
-    
   }
 }
-@media all and (max-width:768px){
-  .disco-mobile{
+@media all and (max-width: 768px) {
+  .disco-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
   }
-  .album-1{
-      display: flex;
-      flex-direction: column;
-    }
-  .album-1 img{
+  .album-1 {
+    display: flex;
+    flex-direction: column;
+
+    img {
       width: 300px;
-      height: 300px;
+      height: auto;
     }
-    .album-1 ol{
+    ol {
       align-items: center;
       margin-left: 30px;
       margin-top: 30px;
     }
-    .album-1 a{
-      margin-left:30px;
-      margin-top: 50px;
-    }
-    .fichaTecnica{
-      display: flex;
-      flex-direction: column;
-    }
-    
-  }
-  @media all and (min-width:768px) and (max-width:992px){
-    .album-1 ol{
-      align-items: center;
-      margin-left: 60px;
-      margin-top: 30px;
-    }
-    .album-1 a{
-      margin-left:30px;
+    a {
+      margin-left: 30px;
       margin-top: 50px;
     }
   }
-  @media all and (min-width:992px){
-    .fot-especial{
-      position: absolute;
-    }
+ 
+  .fichaTecnica {
+    display: flex;
+    flex-direction: column;
   }
-
-
-
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .album-1 ol {
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+  .album-1 a {
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+}
+@media all and (min-width: 992px) {
+  .fot-especial {
+    position: absolute;
+  }
+}

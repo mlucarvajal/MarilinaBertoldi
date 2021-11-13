@@ -70,6 +70,10 @@ body {
   background-color: coral !important;
 }
 
+footer {
+  margin-top: 50px;
+}
+
 .footerPosition1 {
   background-color: rgba(0, 0, 0, 0.57);
   width: 100%;
@@ -110,6 +114,10 @@ footer ul {
   color: #6c757d;
 }
 
+.bio div img {
+  width: 100%;
+}
+
 .infoBio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,29 +131,6 @@ footer ul {
           justify-content: flex-start;
   padding: 0px;
   margin-left: 30px;
-}
-
-.bio div img {
-  width: 100%;
-}
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-to {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
 /*media query imagen biografia*/
@@ -200,25 +185,25 @@ to {
 
 @-webkit-keyframes parpadea {
   0% {
-    opacity: 1.0;
+    opacity: 1;
   }
   50% {
-    opacity: 0.0;
+    opacity: 0;
   }
   100% {
-    opacity: 1.0;
+    opacity: 1;
   }
 }
 
 @keyframes parpadea {
   0% {
-    opacity: 1.0;
+    opacity: 1;
   }
   50% {
-    opacity: 0.0;
+    opacity: 0;
   }
   100% {
-    opacity: 1.0;
+    opacity: 1;
   }
 }
 
@@ -307,7 +292,7 @@ to {
   }
   .discografia div img {
     width: 300px;
-    height: 300px;
+    height: auto;
   }
 }
 
@@ -326,7 +311,7 @@ to {
 
 .disco-img {
   width: 400px;
-  height: 350px;
+  height: auto;
   margin-left: 60px;
   border-radius: 2vh;
 }
@@ -431,9 +416,10 @@ form {
   margin-left: 8px !important;
 }
 
+/*boton escuchame*/
 .btn {
   margin-left: 150px !important;
-  margin-top: 30px !important;
+  height: 60px !important;
 }
 
 .noticias {
@@ -470,14 +456,14 @@ form {
 
 /*pantallas grandes*/
 .carousel-item img {
-  height: 640px;
+  height: auto;
   width: 360px;
 }
 
 /*media query pantallas medias*/
 @media all and (min-width: 768px) and (max-width: 992px) {
   .carousel-item img {
-    height: 400px;
+    height: auto;
     width: 100px;
   }
   .noticias {
@@ -557,7 +543,7 @@ form {
   }
   .album-1 img {
     width: 300px;
-    height: 300px;
+    height: auto;
   }
   .album-1 ol {
     -webkit-box-align: center;

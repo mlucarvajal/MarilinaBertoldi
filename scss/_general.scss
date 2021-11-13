@@ -57,8 +57,8 @@ body {
   color: black !important;
   background-color: coral !important;
 }
-footer{
-  margin-top: 50px
+footer {
+  margin-top: 50px;
 }
 .footerPosition1 {
   @include footerPosition(absolute);
@@ -88,7 +88,6 @@ footer ul {
   }
 }
 
-
 .infoBio {
   display: flex;
   flex-direction: column;
@@ -102,10 +101,11 @@ footer ul {
   .bio {
     display: flex;
     flex-direction: column;
-  }
-  .bio div img {
-    transform: rotate(90deg);
-    margin-top: -100px;
+
+    div img {
+      width: 400px;
+      height: auto;
+    }
   }
 }
 
@@ -189,7 +189,7 @@ footer ul {
 }
 @media all and (max-width: 768px) {
   .disco-img {
-    margin-left: 0px !important;
+    margin-left: -12px !important;
   }
   .discografia div img {
     width: 300px;
@@ -200,11 +200,7 @@ footer ul {
   width: 50%;
   margin-top: 30px;
   margin-bottom: 50px;
-
-  &:hover {
-    animation-name: zoom-img;
-    animation-duration: 3s;
-  }
+  margin-left: 10px;
 }
 
 .disco-img {
@@ -315,7 +311,7 @@ form {
     flex-direction: column;
     &.galeria-img div img {
       width: 300px;
-      margin-left: 30px;
+      margin-left: 15px;
       box-shadow: 0 8px 6px -6px white;
       margin-top: 20px;
       margin-bottom: 20px;
@@ -362,7 +358,7 @@ form {
       margin-top: 50px;
     }
   }
- 
+
   .fichaTecnica {
     display: flex;
     flex-direction: column;

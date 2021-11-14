@@ -70,8 +70,8 @@ body {
   background-color: coral !important;
 }
 
-footer {
-  margin-top: 50px;
+footer ul {
+  list-style: none;
 }
 
 .footerPosition1 {
@@ -79,6 +79,15 @@ footer {
   width: 100%;
   bottom: 0;
   position: absolute;
+  margin-top: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
 
 .footerPosition2 {
@@ -86,10 +95,15 @@ footer {
   width: 100%;
   bottom: 0;
   position: inherit;
-}
-
-footer ul {
-  list-style: none;
+  margin-top: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
 
 .bio {
@@ -116,6 +130,7 @@ footer ul {
 
 .bio div img {
   width: 100%;
+  margin-left: 20px;
 }
 
 .infoBio {
@@ -269,6 +284,20 @@ footer ul {
   margin-left: 60px;
 }
 
+.discografia div {
+  width: 48%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+
+.discografia img:hover {
+  -webkit-animation-name: zoom-img;
+          animation-name: zoom-img;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+}
+
 /*media query discografia*/
 @media all and (max-width: 992px) {
   .discografia {
@@ -293,13 +322,6 @@ footer ul {
     width: 300px;
     height: auto;
   }
-}
-
-.discografia div {
-  width: 50%;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  margin-left: 10px;
 }
 
 .disco-img {
@@ -447,10 +469,14 @@ form {
   margin-right: 10px;
 }
 
+.carousel-inner {
+  margin-left: 20%;
+}
+
 /*pantallas grandes*/
 .carousel-item img {
   height: auto;
-  width: 360px;
+  width: 60% !important;
 }
 
 /*media query pantallas medias*/

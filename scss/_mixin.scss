@@ -3,6 +3,11 @@
   width: 100%;
   bottom: 0;
   position: $position;
+  margin-top: 50px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+ 
 }
 @mixin estilos-a($size, $margin) {
   font-size: $size;

@@ -57,18 +57,17 @@ body {
   color: black !important;
   background-color: coral !important;
 }
-footer {
-  margin-top: 50px;
-}
+
+footer ul {
+    list-style: none;
+  }
+
+
 .footerPosition1 {
   @include footerPosition(absolute);
 }
 .footerPosition2 {
   @include footerPosition(inherit);
-}
-
-footer ul {
-  list-style: none;
 }
 
 .bio {
@@ -85,6 +84,7 @@ footer ul {
   }
   div img {
     width: 100%;
+    margin-left: 20px;
   }
 }
 
@@ -177,6 +177,19 @@ footer ul {
   flex-wrap: wrap;
   flex-direction: row;
   margin-left: 60px;
+
+  div {
+    width: 48%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+  img:hover{
+    
+      animation-name: zoom-img;
+      animation-duration: 3000ms;
+    
+  }
 }
 /*media query discografia*/
 @media all and (max-width: 992px) {
@@ -195,12 +208,6 @@ footer ul {
     width: 300px;
     height: auto;
   }
-}
-.discografia div {
-  width: 50%;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  margin-left: 10px;
 }
 
 .disco-img {
@@ -289,10 +296,13 @@ form {
   margin-left: 10px;
   margin-right: 10px;
 }
+.carousel-inner{
+  margin-left: 20%;
+}
 /*pantallas grandes*/
 .carousel-item img {
   height: auto;
-  width: 360px;
+  width: 60% !important;
 }
 /*media query pantallas medias*/
 @media all and (min-width: 768px) and (max-width: 992px) {

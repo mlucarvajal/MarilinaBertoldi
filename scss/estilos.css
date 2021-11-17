@@ -80,14 +80,13 @@ footer ul {
   bottom: 0;
   position: absolute;
   margin-top: 50px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .footerPosition2 {
@@ -96,14 +95,13 @@ footer ul {
   bottom: 0;
   position: inherit;
   margin-top: 50px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .bio {
@@ -433,8 +431,12 @@ form {
 
 /*boton escuchame*/
 .btn {
-  margin-left: 150px !important;
+  margin-left: 15px !important;
   height: 60px !important;
+}
+
+.form-check {
+  padding-left: 50px !important;
 }
 
 .noticias {
